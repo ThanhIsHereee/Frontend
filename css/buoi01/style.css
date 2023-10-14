@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* unit size
+    đơn vị đo: px/mm/cm
+    %: Là dựa trên thằng cha
+    em: coi font-size của thằng cha là 1 đơn vị
+    rem: coi font-size của html là 1 đơn vị
+    trong frontend: ngta rất ít dùng px | ngta dùng rem và %
+*/
+html {
+    /* 10px */
+    font-family: sans-serif;
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+/* outLine : demo-ipt
+   outLine-style;
+   outLine-color;
+   outLine-width;
+   shorthand: outLine: width style color
+   outLine-offset: khoảng cách từ outline tới border
+*/
+.demo-input {
+    margin: 3rem;
+    border: 1px solid red;
+    outline: none;
+    outline: 1px solid blue;
+    outline-offset: 2rem;
+}
+/* reset css */
+/* unit size
+    đơn vị đo: 
+*/
+.demo-border{
+    border: 0.5rem solid firebrick;
+    border-top: 0.5rem solid teal;
+    border-left: 0.5rem solid violet;
+    border-right: 0.5rem solid rosybrown;
+    border-bottom: 0.5rem solid skyblue;
+    border-radius: 0.5rem;
+}
+.demo-circle{
+    margin: 2rem;
+    border: 0.5rem solid black;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border-top: 0.5rem solid teal;
+    border-left: 0.5rem solid violet;
+    border-right: 0.5rem solid rosybrown;
+    border-bottom: 0.5rem solid skyblue;
+    transition: 2s;
+}
+.demo-circle:hover {
+    transform: rotate(225deg);
+}
+.demo-text{
+    color: steelblue;
+    background-color: darkblue;
+    font-size: 2rem;
+    /* unicode-bidi: bidi-override; */
+    /* text-decoration: where style color; */
+    /* where: overline/line-through/underline
+        style: solid dotted dashed */
+    text-decoration: overline solid crimson;
+    text-transform: capitalize ;
+    text-indent: 5rem; /* thut. dau` dong` */
+    /* letter-spacing: 1rem; /"mỗi chữ sẽ cách nhau 1rem"/ */
+    /* word-spacing: 1rem; */
+    /* line-height: 3rem; */
+    /* white-space: pre; */
+    text-shadow: 1px 1px 4px wheat;
+}
+.demo-text img{
+    vertical-align: baseline;
+}
+/* baseline/middle/sub/super */

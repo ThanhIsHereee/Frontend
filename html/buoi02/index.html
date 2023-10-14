@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Color
+            color: đổi màu chữ
+            background-color: đổi màu nền
+        */
+        /*các tag có 2 cách select chính là thông qua
+        tagName | class | id */
+        /*thông qua tagName*/
+        p{
+            color: purple;
+        }
+        /*select theo tag nhưng mà chọn thứ tự từ trên xuống*/
+        /*:nth-child(2) thằng thứ 2 từ trên xuống*/
+        p:nth-child(2){
+            text-align: center;
+        }
+        /*class Name: với class ần cso dấu . ở trước*/
+        /*tạo 1 class*/
+        .dacbiet{
+            color: blanchedalmond !important;
+        }
+        .dacbiet2{
+            font-weight: 700;
+            color: cornflowerblue;
+        }
+        /* select bằng id: # */
+        #IDne{
+            color: brown;
+        }
+    </style>
+</head>
+    <body>
+        <!-- Quotations : trích dẫn -->
+        <p class="dacbiet">"ăn quả nhớ kẻ trồng cây"</p>
+        <q>ăn quả nhớ kẻ trồng cây</q>
+        <!-- thằng Quotations là một inline-block
+        cặp nháy đôi không focus được-->
+        <!-- blockquote-->
+        <blockquote class="dacbiet dacbiet2" cite="https://www.facebook.com/profile.php?id=100009131859031">
+            Nguyễn Quang Thanh
+        </blockquote>
+        <!-- abbr -->
+        <p>
+            <abbr title="ThanhIsHeree">
+                tôi
+            </abbr>biết...
+        </p>
+        
+        <!-- address: dùng để lưu những địa chỉ và là một block -->
+        <p>my heart</p>
+        <address>my heart</address>
+        <!-- cite -->
+        <p id="IDne">
+            <cite>Created by</cite>
+                Neole in 2002
+        </p>
+        <!-- bdo -->
+        <bdo dir="rtl">He ló</bdo>
+
+    </body>
+</html>

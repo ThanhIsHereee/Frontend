@@ -1,0 +1,168 @@
+<!--  nội dung buổi học
+    h   heading
+    p paragraphs
+    pre preformated
+    style   text
+    *Formating-hyperlinks -->
+<!-- comment: ghi chú -->
+<!-- HTML: Hypertext markup language
+    ngôn ngữ đánh dấu siêu văn bản
+đây không phải ngôn ngữ lập trình (PUG) -->
+
+<!-- file html này chạy được bằng gì trình duyệt
+khi mà muốn chạy thì phải nói với trình duyệt tui được
+viết bằng gì -->
+<!-- khi muốn viết 1 document bằng html thì mình phải
+báo cho web page hiểu đây là doc được viết bằng html5 -->
+<!-- đây là tag: thẻ -->
+<!-- tag: <tagName attribute> content </tagName> -->
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>buổi 1</title>
+        <style>
+            .class-red-color{
+                color: red;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="#chap1">bấm zô đây tao dắt mày xuống chap 1</a>
+        <!-- bộ thẻ heading -->
+        <!-- trong html ngta tạo thẻ có tên giống với chức
+        năng của nó -->
+        <h1>Anh Điệp đẹp trai h1</h1>
+        <h2>Anh Điệp đẹp trai h2</h2>
+        <h3>Anh Điệp đẹp trai h3</h3>
+        <h4>Anh Điệp đẹp trai h4</h4>
+        <h5>Anh Điệp đẹp trai h5</h5>
+        <h6>Anh Điệp đẹp trai h6</h6>
+
+        <!-- display: block (khối) 
+        1 tag mà display block thì nó chiếm 1 hàng
+        nó không bao giờ cho tag khác cùng hàng với nó -->
+        <!-- các tag heading là block -->
+        <!-- h càng cao thì càng có font-size nhỏ -->
+
+        <!-- display: inline-block, nó vẫn là khối,
+        nhưng nó ôm trọn content -->
+        <!-- paragraghs tag -->
+        <!-- p: paragraghs 
+        nếu bạn có 1 đoạn văn hãy dùng thể p -->
+        <p>
+            Lorem, &#8194; &#8194; &#8194; ipsum <br />dolor sit amet
+            consectetur adipisicing elit. Pariatur magni libero voluptas fugit
+            alias laudantium quod, consequatur, doloribus excepturi maiores
+            repudiandae tempore qui velit officia recusandae non explicabo
+            corrupti ut.
+        </p>
+        <!-- thẻ p là display: block
+        muốn xuống hàng thì <br>: breakline -->
+        <!-- preformated tag: paragraphs nhưng tùy biến -->
+        <pre>
+Lorem ipsum,       dolor sit amet
+ consectetur adipisicing elit. Quam
+  iusto quos nisi ipsum suscipit 
+  mollitia quia, molestias, ut est
+   itaque facere, alias architecto
+    asperiores quibusdam? Quidem molestiae
+     rerum perferendis impedit.</pre
+        >
+        <!-- tất cả các tag đề có style -->
+        <!-- text-align: left/right/center/inherit -->
+        <!-- căng lề của text trong thẻ -->
+        <p style="text-align: right">Hello1
+            <p>hello2</p>
+        </p>
+
+        <!-- thẻ tượng hình -->
+        <p><em>xin chào</em> <small>các</small> bạn
+             <del>tao</del> <strong>tôi</strong> là 
+             <mark>Điệp đẹp trai</mark>
+        </p>
+        <!-- i: italic | em : emphasized -->
+        <!-- b:bold    | strong -->
+        <p>H<sub>2</sub>0</p> 
+        <p>ax<sup>2</sup> + bx + c = 0</p>
+        <!-- sub | sup -->
+        <!-- thẻ tượng hình là display: inline -->
+
+        <!-- pseudo tag: thẻ giả|vô nghĩa
+            span: inline
+            div : block
+         -->
+
+        <p><span style="font-size: 100px;
+            color: red;
+            text-decoration: underline;
+            background-color: blue;">x</span>in chào các bạn</p>
+        <!-- color: RGB|HEX|HSLA -->
+
+        <!-- sửa -->
+        <p class="class-red-color" 
+            style="text-decoration: underline"> 
+            Lòng ta trống lắm, lòng ta sụp
+        <br>Như túp nhà không bốn vách xiêu;
+        <br>Em chẳng cứu giùm, em bỏ mặc
+        <br>Mưa đưa ta đến bến Đìu hiu.</p>
+
+        <p style="color: blue; text-align: right;"> Em ở bên mình; ta ngó say,
+            <br>Song le bên ấy với bên này
+            <br>Cũng xa như những bờ xa cách,
+            <br>Không có thuyền qua, không cánh bay.</p>
+        <div style="color: red;">
+            <p>Ta thấy em xinh, khẽ lắc đầu.</p>
+            <p>Bởi vì ta có được em đâu!</p>
+            <p>Tay kia sẽ ấp nhiều tay khác,</p>
+            <p>Môi ấy vì ai sẽ đượm mầu.</p>
+        </div>
+        <hr>
+        <!-- links hyperlink -->
+        <a href="./baitap1.html" target="_blank">bài 1</a>
+        <a href="http://google.com/">google</a>
+        <p>ví dụ</p>
+        <p>ví dụ</p>
+        <p>ví dụ</p>
+        <p>ví dụ</p>
+        <p>ví dụ</p>
+        <p>ví dụ</p>
+        <p>ví dụ</p>
+        <p>ví dụ</p>
+        <p>ví dụ</p>
+        <p>ví dụ</p>
+        <p>ví dụ</p>
+        <p>ví dụ</p>
+        <p>ví dụ</p>
+        <p>ví dụ</p>
+        <p>ví dụ</p>
+        <p>ví dụ</p>
+        <h1 id="chap1">chap1</h1>
+        <p>ví dụ</p>
+        <p>ví dụ</p>
+        <p>ví dụ</p>
+        <p>ví dụ</p>
+        <p>ví dụ</p>
+        <p>ví dụ</p>
+        <p>ví dụ</p>
+        <p>ví dụ</p>
+        <p>ví dụ</p>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </body>
+</html>

@@ -1,0 +1,76 @@
+.back{
+    height: 100vh;
+    background-color: darksalmon;
+}
+.heading{
+    background-color: whitesmoke;
+    padding: 0rem 2rem;
+}
+.op-list{
+    background-color: rgb(248, 138, 28);
+    list-style-type: none;
+}
+.side-Banner{
+    max-width: 1200px;
+    /* margin: 0 auto; */
+}.op{
+    /* display: flex; */
+    /* justify-content: center; */
+    float: left;
+}
+.distance{
+    border: 0 ;
+    padding: 6rem;
+    padding-left: 2rem;
+}
+.clearfix{
+    display: block;
+    content: "";
+    clear: both;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    /* 10px */
+    font-family: sans-serif;
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+/* middle */
+.left{
+    /* border: 2rem solid navy; */
+    width: 75%;
+    height: 100%;
+    float: left;
+    background-color: aquamarine;
+    padding: 0rem 2rem;
+}
+.inf{
+    font-size: larger;
+}
+.right{
+    /* border: 2rem solid firebrick; */
+    width: 25%;
+    height: 100%;
+    float: left;
+    padding: 0rem 4rem;
+    background-color: cornflowerblue;
+}
+.container{
+    /* border: 0.5rem solid royalblue; */
+    height: 54rem;
+    padding-left: 0;
+    max-width:100%;
+    /* margin: 0 auto; */
+}
+.end{
+    background-color: antiquewhite;
+}
+.pad{
+    padding: 0rem 6rem;
+}

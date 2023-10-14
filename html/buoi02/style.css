@@ -1,0 +1,39 @@
+/* .btn-demo1 */
+.btn-demo1{
+    color: brown;
+
+}
+.btn-demo1:visited {
+    color: cornflowerblue;
+}
+.btn-demo1:hover{
+    color: darkgrey;
+}
+.btn-demo1:active{
+    color: black;
+}
+/* .btn-demo2 */
+.btn-demo2{
+    font-weight: 700;
+    color: darkslategrey;
+    display: inline-block;
+    border: 3px solid cornflowerblue;
+    text-decoration: none;
+    padding:  10px 15px 20px;
+    background-color: cornsilk;
+    transition: 3000ms;
+}
+.btn-demo2:hover{
+    color:aliceblue;
+    background-color: black;
+}
+/* model box 
+từ viền vào content gọi là padding
+từ viền so với bên ngoài margin*/
+.img-demo1{
+    width: 10cm;
+    height: 5cm;
+    background-image: url("https://i.pinimg.com/564x/b6/15/ac/b615acf2df4ce4794acc60d22b13512e.jpg");
+    background-size: cover;
+    background-position: center;
+}

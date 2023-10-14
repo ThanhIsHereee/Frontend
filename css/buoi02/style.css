@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+body{
+    font-size: 1.6rem;
+}
+.dad{
+    border: 2px solid hotpink;
+    display: flex;
+}
+.daughter{
+    border: 2px solid khaki;
+    width: 30rem;
+    height: 50rem;
+}
+.son{
+    border: 2px solid green;
+    width: 30rem;
+    height: 50rem;
+}
+/* flex */
+.chachu{
+    border: 2px solid violet;
+    display: flex;
+}.chau{
+    border: 2px solid firebrick;
+    width: 30rem;
+}
+.chat{
+    border: 2px solid royalblue;
+    width: calc(100vw - 30rem);
+}
+/* demo position */
+.big-div{
+    border: 2px solid teal;
+    width: 30rem;
+    position: relative;
+}
+.small-div{
+    border: 2px solid teal;
+    background-color: #90dede;
+    /* position: relative; */
+    /* top: 2rem; */
+    /* left: 2rem; */
+    position: absolute;
+    /* top: 100%; */
+    /* right: 0; */
+    /* transform: translate(-50%); */
+    top: 50%;
+    /* bottom: 50%; */
+    /* right: 50%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*  position: static; mặc định | tĩnh | không xê dịch
+    position: relative; sẽ xê dịch với ban đầu
+    position: absolute; sẽ xê dịch với tham chiếu là 1 thằng cha có
+        position khác static
+    position: fixed; cố định ở đâu đó rên màn hình
+    position: sticky; 
+*/
+.btn{
+    position: sticky;
+    top: 2rem;
+}
+/*  pseudo tag: div span
+    pseudo class : hover | active | visited | unvisited | focus
+    pseudo element :: after | :: before 
+
+*/
+.ahihi::after{
+    content: 'âdvj';
+}
+/* BUTTON */
+.btn-demo{
+    margin: 3rem;
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    border: 1px solid firebrick;
+    color: firebrick;
+    background-color: transparent;
+    position: relative;
+    
+}
+.btn-demo::after{
+    content: "";
+    position: absolute;
+    background-color: firebrick;
+    top: 0;
+    /* bottom: 0; */
+    width: 0;
+    right: 0;
+    /* left: 0; */
+    height: 100%;
+    /* transform: translate(-75%); */
+    transition: 0.3s;
+    z-index: -1;
+}
+.btn-demo:hover::after{
+    left: 0;
+    width: 100%;
+}
+.btn-demo:hover{
+    color: white;
+}

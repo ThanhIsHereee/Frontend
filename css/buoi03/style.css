@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    font-size: 1.6rem;
+}
+/* transform: biến hình */
+.demo_transform {
+    height: 100vh;
+    border: 3px solid rebeccapurple;
+    position: relative;
+}
+.div_demo {
+    width: 10rem;
+    height: 5rem;
+    background-color: rosybrown;
+    border: 3px solid slateblue;
+    transition: 0.5s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(50%, 50%); */
+}
+.div_demo:hover{
+    /* 2d */
+    /* transform: translate(50%, 50%); */
+    /* transform: rotate(35deg); */
+    /* transform: scale(2, 3); */
+    /* transform: skew(27deg, 10deg); */
+    transform: matrix();
+    /* scaleX | scaleY | skewX | translateX | translateY */
+    /* 3d */
+    transform: rotateY(70deg) rotateX(30deg) rotateZ(30deg);
+}
+/* MENU */
+.nav-bg {
+    border: 2px solid darkcyan;
+    /* height: 10rem; */
+    background-color: #fafafa;
+}
+.container{
+    border: 3px solid hotpink;
+    max-width: 1320px;
+    margin: auto;
+    height: 10rem;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 10rem;
+    align-items: center;
+}
+.nav_menu_list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.nav_menu{
+    display: flex;
+    align-items: center;
+}
+.nav_logo a {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: deepskyblue;
+    letter-spacing: 0.5rem;
+}
+.nav_logo span {
+    color: firebrick;
+}
+/* làm MENU */
+.nav_menu_link{
+    padding: 0 2rem;
+    /* border: 2px solid black; */
+    text-decoration: none;
+    color: #2a2a2a;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+.nav_menu_link:hover{
+    color: crimson;
+    transition: 0.3s;
+}
+/* BUTTON */
+.btn_contact{
+    /* background-color: crimson; */
+    padding: 1rem 2rem;
+    border: none;
+    border: 2px solid crimson;
+    color: crimson;
+    border-radius: 3rem;
+    outline: none;
+    background-color: transparent;
+    position: relative;
+    
+}
+.btn_contact::after{
+    content: "";
+    position: absolute;
+    background-color: crimson;
+    top: 0;
+    /* bottom: 0; */
+    width: 0;
+    right: 0;
+    /* left: 0; */
+    height: 100%;
+    /* transform: translate(-75%); */
+    transition: 0.3s;
+    z-index: -1;
+}
+.btn_contact:hover::after{
+    left: 0;
+    width: 100%;
+}
+.btn_contact:hover{
+    color: white;
+}
+
+
+.active{
+    color: crimson;
+}
+/* repo */
+@media (max-width: 875px) {
+    .btn_contact{
+        display: none;
+    }
+    .nav{
+        justify-content: center;
+    }
+    .nav_menu_link{
+        padding: 0 1.2rem;
+    }
+}
+@media (max-width: 690px) {
+    .nav{
+        position: relative;
+        justify-content: space-between;
+    }
+    .nav_menu{
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 9999;
+        transition: 0.3s;
+        height: 0%;
+        overflow: hidden;
+    }
+    .btn_toggle_menu:checked ~ .nav_menu{
+        height: 185%;
+        transition: 0.3s;
+    }
+    .nav_menu_list{
+        display: block;
+        background-color: aliceblue ;
+        /* border: 0.1px solid black; */
+    }
+    .nav_menu_items{
+        width: 40rem;
+        height: 3rem;
+        border: 0.001px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav_menu_items:hover{
+        background-color: cornflowerblue;
+    }
+    .btn_toggle_menu{
+        position: absolute;
+        right: 4rem;
+        width: 5rem;
+        height: 5rem;
+        opacity: 0;
+        z-index: 9999;
+    }
+    .toggle_menu_icon{
+        position: absolute;
+        right: 5rem;
+        border: 2px solid darkblue;
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .toggle_menu_icon span{
+        display: block;
+        width: 100%;
+        background-color: black;
+        height: 3px;
+        transition: 0.3s;
+    }
+    .toggle_menu_icon span::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 80%;
+        height: 3px;
+        background-color: black;
+        transition: 0.7s;
+    }
+    .toggle_menu_icon span::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 80%;
+        height: 3px;
+        background-color: black;
+        transition: 0.7s;
+    }
+    .btn_toggle_menu:checked ~ .toggle_menu_icon span::before{
+        transform: rotate(45deg);
+        top: 50%;
+        right: -18%;
+        width: 140%;
+    }
+    .btn_toggle_menu:checked ~ .toggle_menu_icon span::after{
+        transform: rotate(-45deg);
+        bottom: 50%;
+        left: -18%;
+        width: 140%;
+    }
+    .btn_toggle_menu:checked ~ .toggle_menu_icon span{
+        width: 0;
+    }
+}

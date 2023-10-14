@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form đăng ký du lịch</title>
+    <style>
+        .travle tr,
+        .travle,
+        .travle td{
+            border: 2px solid darkolivegreen;
+            border-collapse: collapse;
+            margin: auto;
+            padding: 3pt;
+        }
+    </style>
+</head>
+    <body>
+        <h1 style="text-align: center; color: cadetblue;">Đăng Ký Du Lịch</h1>
+        <table class="travle">
+            <tr>
+                <td>Họ và tên</td>
+                <td>
+                    <!-- <label for="Họ và tên"></label> -->
+                    <input 
+                    type="text"
+                    value="Nguyễn Ngọc Anh Thơ"
+                    placeholder="Nguyễn Quang Thanh">
+                </td>
+            </tr>
+            <tr>
+                <td>Địa chỉ</td>
+                <td>
+                    <input 
+                    type="text"
+                    value="My heart"
+                    placeholder="address">
+                </td>
+            </tr>
+            <tr>
+                <td>Số Điện Thoại</td>
+                <td>
+                    <input 
+                    type="number"
+                    value="113"
+                    placeholder="0123456789">
+                </td>
+            </tr>
+            <tr>
+                <td>Khách Việt Nam</td>
+                <td>
+                    <input type="checkbox" 
+                    name="country" 
+                    id="VN">
+                </td>
+            </tr>
+            <tr>
+                <td>Chọn Tour</td>
+                <td>
+                    <select name="Tour" id="TourID">
+                        <option value="CPC">Cà Mau - Phú Quốc - Côn đảo</option>
+                        <option value="DHHS">Đà Nẵng - Hải Phòng - Hà Nội - Sapa</option>
+                        <option value="VDN">Vũng Tàu - Đa Lạt - Nha Trang</option>
+                        <option value="NHHS">Nha Trang - Huế - Hà Nội - Sapa</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Phương tiện</td>
+                <td>
+                    <label for="Plant">Plant</label>
+                    <input 
+                    type="radio"
+                    id="P"
+                    name="Trafic">
+                    <label for="oto">oto</label>
+                    <input 
+                    type="radio"
+                    id="O"
+                    name="Trafic">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <fieldset>
+                        <legend style="text-align: center; color: navy;">
+                            Số lượng đoàn khách
+                        </legend>
+                        <div>
+                            <label for="adutl">Người lớn</label>
+                            <input type="checkbox" id="adutl" name="age" value="adutl">
+                            <label for="child">Trẻ em</label>
+                            <input type="checkbox" id="child" name="age" value="child">
+                        </div>
+                    </fieldset>
+                </td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td>
+                    Ghi chú thêm
+                </td>
+                <td>
+                    <textarea cols="30" rows="10" 
+                    style="min-width: 300px; max-height: 500xp;"
+                    placeholder="2 trẻ em 
+dưới 6 tuổi 
+có 2 người dị ứng hải sản">
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit"
+                    name="submit"
+                    id="submit">
+                </td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td colspan="2" >registered successfully</td>
+                <!-- <td></td> -->
+            </tr>
+        </table>    
+    </body>
+</html>

@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    /* 10px */
+    font-family: sans-serif;
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+/* reset CSS */
+/* demo1-bg */
+.demo1-bg{
+    height: 100vh;
+    /* view height: độ cao bằng với khung hình hiển thị web người dùng */
+    background-color: aquamarine;
+}
+.demo2-bg{
+    height: 100vh;
+    background-color: darksalmon;
+    background-image: url('./Cat.jpg');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+.demo-fixed{
+    background: url('./city.jpg');
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+/* Layout */
+.side-Banner{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.clearfix{
+    display: block;
+    content: "";
+    clear: both;
+}
+.container{
+    border: 0.5rem solid royalblue;
+    height: 30rem;
+}
+.content-left{
+    border: 0.5rem solid red;
+    float: left; /* trôi qua bên trái */
+    width: 65%;
+    height: 100%;
+}
+.content-right{
+    border: 0.5rem solid blue;
+    float: left;
+    width: 35%;
+    height: 100%;
+}
+.content-right_top{
+    width: 100%;
+    height: 50%;
+}
+.content-right_bottom{
+    width: 100%;
+    height: 50%;
+}
+.img-banner{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+/* Menu */
+.menu_list{
+    list-style-type: none;
+}
+.menu-iteam_List {
+    float: left;
+}
+.menu-link {
+    border: 3px solid navy;
+    padding: 3rem 4rem;
+    display: block;
+}
